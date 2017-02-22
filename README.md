@@ -1,0 +1,2 @@
+# WixExampleApp
+Example WiX app
