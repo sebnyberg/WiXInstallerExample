@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
      xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
-	<Bundle Name="WixExampleApplication" Version="1.0.0.0" Manufacturer="EuroFinansAB" 
+	<Bundle Name="WiXInstallerExample" Version="1.0.0" Manufacturer="EuroFinansAB" 
           UpgradeCode="652244d7-a05a-46ef-91c9-d5ecd86c0ceb">
     <BootstrapperApplicationRef Id="WixStandardBootstrapperApplication.HyperlinkSidebarLicense">
       <bal:WixStandardBootstrapperApplication
