@@ -28,7 +28,7 @@ There are a number of different install UI types. If none is specified, the proj
 
 Included in the project is a sequence which presents the user with Welcome dialog, Install directory dialogue, then installs the program. If you want to use one of the UI presets you can define it like so:
 
-```
+```XML
 <!-- WixUI_Minimal / WixUI_InstallDir are the most used options -->
 <UIRef Id="WixUI_Minimal">
 ```
