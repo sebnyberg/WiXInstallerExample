@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Name="ExampleWiXApp" Language="1033" Version="1.0.0" Manufacturer="EuroFinansAB" UpgradeCode="8c85cfe8-27e2-4080-b580-5a11a6ae14dd">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+    <MediaTemplate EmbedCab="yes" />
+    <UIRef Id="WixUI_Minimal" />
+
+    <!-- Custom license -->
+    <!--<WixVariable Id="WixUILicenceRtf" Value="licence.rtf"/>-->
+    <!-- Custom background -->
+    <!--<WixVariable Id="WixUIDialogBmp" Value="dlgbmp.bmp"/>-->
+
+    <!-- Example of a directory search variable -->
+    <!-- By writing <![CDATA[NOT GETSOMEFOLDER]]>-->
+    <!-- We can make a section not execute only if the folder does not exist -->
+    <!--<Property Id="GETSOMEFOLDER">
+      <DirectorySearch
+        Id="ProgramFilesSearch"
+        Path="[ProgramFilesFolder]"
+        AssignToProperty="no">
+      </DirectorySearch>
+    </Property>-->
+    
+    <!-- Upgrade settings (uncomment this when releasing patches) -->
+    <!--<MajorUpgrade AllowDowngrades="no"
+                  DowngradeErrorMessage="A newer version of [ProductName] is already installed."/>-->
+
+    <!-- Require .NET framework 4.5-->
+    <PropertyRef Id="NETFRAMEWORK45"/>
+    <Condition
+      Message="This application requires .NET Framework 4.5. Please install the .NET framework then retry.">
+      <![CDATA[Installed OR NETFRAMEWORK45]]>
+    </Condition>
+
+    <Feature Id="WiXAppFeature" Title="WiXApp" Level="1" Absent="disallow" AllowAdvertise="no">
+      <ComponentGroupRef Id="MainApplication" />
+      <ComponentRef Id="UninstallShortcut" />
+    </Feature>
+  </Product>
+
+  <Fragment>
+    <Icon Id="appicon.ico" SourceFile="appicon.ico"/>
+  </Fragment>
+
+</Wix>

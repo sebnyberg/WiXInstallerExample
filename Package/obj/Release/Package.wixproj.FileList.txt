@@ -1,0 +1,8 @@
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\Package\bin\Release\Setup.msi
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\Package\bin\Release\Setup.wixpdb
+obj\Release\Components.wixobj
+obj\Release\Directories.wixobj
+obj\Release\Product.wixobj
+obj\Release\Package.wixproj.BindContentsFileListnull.txt
+obj\Release\Package.wixproj.BindOutputsFileListnull.txt
+obj\Release\Package.wixproj.BindBuiltOutputsFileListnull.txt

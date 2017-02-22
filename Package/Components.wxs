@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <ComponentGroup Id="MainApplication" 
+                    Directory="INSTALLFOLDER">
+      <Component Id="MainApplicationExe">
+
+        <File Id="WpfApp.exe"
+              Source="$(var.WpfApp.TargetPath)"
+              KeyPath="yes">
+
+          <!-- Create a shortcut to this file and add it to the shortcuts folder -->
+          <Shortcut Id="ExampleWiXAppShortcut"
+                    Name="ExampleWiXApp"
+                    Description="Shortcut to the example WiX application"
+                    Directory="SHORTCUTSFOLDER"
+                    WorkingDirectory="INSTALLFOLDER"
+                    Icon="appicon.ico"
+                    Advertise="yes" />
+        </File>
+
+        <!-- Delete shortcuts on uninstall -->
+        <RemoveFolder Id="DeleteExampleWiXAppShortcuts"
+                      Directory="SHORTCUTSFOLDER"
+                      On="uninstall" />
+
+      </Component>
+
+      <Component Id="MainApplicationLibrary" Guid="D15147AE-04CA-4A2E-8148-3FC5A3B49FAF">
+        <File Id="Library.dll"
+              Source="$(var.WpfApp.TargetDir)Library.dll"
+              KeyPath="yes" />
+      </Component>
+
+      <Component Id="MainApplicationConfig" Guid="D16EB2FE-E69D-4106-BF58-72D6DDAE43C7">
+        <File Id="WpfApp.exe.Config"
+              Source="$(var.WpfApp.TargetDir)WpfApp.exe.config"
+              KeyPath="yes" />
+      </Component>
+
+    </ComponentGroup>
+
+    <!-- Provide uninstaller shortcut to the shortcuts folder -->
+    <Component Id="UninstallShortcut"
+               Guid="F7BC9941-FADB-4C70-8C3A-487DB7BB58B3"
+               Directory="SHORTCUTSFOLDER">
+
+      <Shortcut Id="UninstallThisProduct"
+                Name="Uninstall ExampleWiXApp"
+                Description="Uninstall the example WiX application"
+                Target="[System64Folder]msiexec.exe"
+                Arguments="/x [ProductCode]"/>
+
+      <RegistryValue Root="HKCU"
+                     Key="Software\EuroFinans\WiXExampleApp"
+                     Name="installed"
+                     Type="integer"
+                     Value="1"
+                     KeyPath="yes" />
+    </Component>
+  </Fragment>
+</Wix>

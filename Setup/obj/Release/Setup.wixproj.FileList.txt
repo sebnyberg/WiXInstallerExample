@@ -1,0 +1,6 @@
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\Setup\bin\Release\BootStrapper.exe
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\Setup\bin\Release\BootStrapper.wixpdb
+obj\Release\Bundle.wixobj
+obj\Release\Setup.wixproj.BindContentsFileList.txt
+obj\Release\Setup.wixproj.BindOutputsFileList.txt
+obj\Release\Setup.wixproj.BindBuiltOutputsFileList.txt

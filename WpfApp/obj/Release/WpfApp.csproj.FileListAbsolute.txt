@@ -1,0 +1,16 @@
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\bin\Release\WpfApp.exe.config
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\bin\Release\WpfApp.exe
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\bin\Release\WpfApp.pdb
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\bin\Release\Library.dll
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\bin\Release\Library.pdb
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\obj\Release\WpfApp.csprojResolveAssemblyReference.cache
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\obj\Release\MainWindow.g.cs
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\obj\Release\App.g.cs
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\obj\Release\WpfApp_MarkupCompile.cache
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\obj\Release\WpfApp_MarkupCompile.lref
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\obj\Release\MainWindow.baml
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\obj\Release\WpfApp.g.resources
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\obj\Release\WpfApp.Properties.Resources.resources
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\obj\Release\WpfApp.csproj.GenerateResource.Cache
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\obj\Release\WpfApp.exe
+C:\Users\sebastian\Documents\Visual Studio 2015\Projects\WiXInstallerExample\WpfApp\obj\Release\WpfApp.pdb

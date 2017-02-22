@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <!-- Create a folder for the actual installation files -->
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="ExampleWiXApp" />
+      </Directory>
+
+      <!-- Create a folder for shortcuts in the start-menu -->
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="SHORTCUTSFOLDER"
+                   Name="ExampleWiXApp" />
+      </Directory>
+    </Directory>
+  </Fragment>
+</Wix>
